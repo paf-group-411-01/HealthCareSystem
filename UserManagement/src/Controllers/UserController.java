@@ -35,7 +35,7 @@ public class UserController {
 	}
 	@Path("delete/{id}")
 	@DELETE
-	@RolesAllowed("ROLE_ADMIN")
+	@RolesAllowed("Admin")
 	@Produces(MediaType.APPLICATION_JSON)
 	public SingleResponse delete(@PathParam("id") Long id) {
 		try {
@@ -49,7 +49,7 @@ public class UserController {
 	@PathParam("update/{id}")
 	@PUT
 	@Consumes(MediaType.APPLICATION_JSON)
-	@RolesAllowed("ROLE_ADMIN")
+	@RolesAllowed("Admin")
 	@Produces(MediaType.APPLICATION_JSON)
 	public SingleResponse update(@PathParam("id") Long id, User a) {
 		try {
