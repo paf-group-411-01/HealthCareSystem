@@ -1,5 +1,6 @@
 package com;
 
+
 import model.Appointment;
 
 //For REST Service 
