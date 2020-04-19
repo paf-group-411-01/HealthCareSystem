@@ -43,7 +43,7 @@ public class UserService {
 		statement.setString(3, toMd5(user.getPassword()));
 
 		switch (user.getRole()) {
-		case "DOCTOR":
+		case "Doctor":
 			statement.setInt(4, 2);
 			break;
 		default:
@@ -92,13 +92,13 @@ public class UserService {
 		statement.setString(2, a.getName());
 		statement.setString(3, toMd5(a.getPassword()));
 		switch (a.getRole()) {
-		case "DOCTOR":
+		case "Doctor":
 			statement.setInt(4, 2);
 			break;
-		case "USER":
+		case "User":
 			statement.setInt(4, 1);
 			break;
-		case "ADMIN":
+		case "Admin":
 			statement.setInt(4, 3);
 			break;
 		}
